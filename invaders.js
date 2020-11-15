@@ -1,15 +1,15 @@
 
 const screen = document.getElementById('screen');
-let loopId;
-
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
-context.scale(10,10);
+
 canvas.style.width ='100%';
 canvas.style.height='100%';
 canvas.width = screen.offsetWidth;
 canvas.height = screen.offsetHeight;
+
 makeItPixelated(context);
+let loopId;
 
 const gameObject = {
     gameOver: false,
