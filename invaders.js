@@ -18,11 +18,8 @@ const gameObject = {
     weapon: 2,
     bullets: {},
     get bulletSpeed() {
-        this.fireRate = 0.25 / (this.weapon + 1);
         return (this.weapon * 150) + 90;
     },
-    fireRate: 0.25,
-    fireTimeout: 0,
     enemies: {},
     enemy: {
         y: 15,
@@ -167,12 +164,8 @@ class Player {
                 this.dy = playerSpeed;
                 this.y += (dt * this.dy) / 3;
             }
-            if(gameObject.keyboardKeys['Space'] && gameObject.fireTimeout <= 0) {
+            if(gameObject.keyboardKeys['Space']) {
                shoot(this.x + 2, this.y + this.h/2);
-               gameObject.fireTimeout = gameObject.fireRate;
-            }
-            if(gameObject.fireTimeout > 0) {
-                gameObject.fireTimeout -= dt;
             }
         } else {
             this.dx = 0;
