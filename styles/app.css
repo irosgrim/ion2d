@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('../assets/PressStart2P-Regular.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0.5rem;
+}
+.screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 320px;
+    max-height: 290px;
+    border: 1px solid black;
+}
+.circle-btn {
+    border: 1px solid #333333;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast
+}
