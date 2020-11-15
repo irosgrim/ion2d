@@ -2,3 +2,4 @@
 
 ## simple space invaders clone
 
+![invaders](invaders.png)
