@@ -7,8 +7,42 @@
     <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
-    <div class="screen" id="screen">
-        <canvas id="canvas" height="270"></canvas>
+    <div id="app">
+        <div class="header">
+            <h1>Hello world!</h1>
+            <div class="row">
+                <div class="col">
+                    <p class="intro">
+                        I'm a webdeveloper and this is a page of random bits.
+                    </p>
+                </div>
+                <div class="col">
+                    <nav class="main-menu">
+                        <ul>
+                            <li>source</li>
+                            <li>about</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h2 class="entry-heading">Space invaders clone</h2>
+        <div class="row mt-3">
+            <div class="col game" id="screen">
+                <div class="screen">
+                    <canvas id="canvas" height="270">This game only works on modern browsers!</canvas>
+                </div>
+            </div>
+            <div class="col pl-2">
+                <ul class="about-project">
+                    <li>press space to shoot</li>
+                    <li>press &leftarrow; &uparrow; &downarrow; &rightarrow; keys to move</li>
+                    <li>press 1-5 to change bullet speed</li>
+                    <li>press R key to restart game</li>
+                </ul>
+                <p class="mt-3 light-color mb-3">work in progress</p>
+            </div>
+        </div>
     </div>
     <script src="invaders.js"></script>
 </body>

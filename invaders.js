@@ -342,7 +342,7 @@ function onKeyPress(e) {
         gameObject.weapon = parseInt(key) - 1;
         renderMenu();
     }
-    if(key.toLowerCase() === 'p') {
+    if(key.toLowerCase() === 'r') {
         console.log('restart game');
         gameObject.gameOver = false;
         init();
@@ -384,6 +384,6 @@ function gameOver() {
     context.beginPath();
     context.fillStyle = '#333333';
     context.font = "8px 'PressStart2P-Regular'";
-    context.fillText('Press "P" to play again', (canvas.width / 2) - 8 * 11, (canvas.height/2) - 8 + 32);
+    context.fillText('Press "R" to play again', (canvas.width / 2) - 8 * 11, (canvas.height/2) - 8 + 32);
     context.closePath();
 }
